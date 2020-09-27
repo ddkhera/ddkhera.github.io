@@ -1,7 +1,7 @@
 <script>
           var str = window.location.href;
-          //var pos = str.indexOf(".io/");
-          document.write(pos+4); //Using document.write() after an HTML document is loaded, will delete all existing HTML:
+          var pos = str.indexOf(".io/");
+         // document.write(pos+4); //Using document.write() after an HTML document is loaded, will delete all existing HTML:
           var InstaHandle = str.slice(pos+4);
           document.write(InstaHandle);
 </script>
