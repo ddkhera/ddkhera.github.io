@@ -12,7 +12,6 @@
     <!--a href="https://www.instagram.com/thesimpsons" id="userName"-->
 	<!--<@thesimpsons</a-->
     <div id="links">
-      <a class="link" id = "Button0" href="" target="_blank">Loading Awesomeness . . .</a>
       <a class="link" id = "Button1" href="" target="_blank">Loading Awesomeness . . .</a>
       <a class="link" id = "Button2" href="" target="_blank">Loading Awesomeness . . .</a>
       <a class="link" id = "Button3" href="" target="_blank">Loading Awesomeness . . .</a>
@@ -22,6 +21,7 @@
       <a class="link" id = "Button7" href="" target="_blank">Loading Awesomeness . . .</a>
       <a class="link" id = "Button8" href="" target="_blank">Loading Awesomeness . . .</a>
       <a class="link" id = "Button9" href="" target="_blank">Loading Awesomeness . . .</a>
+      <a class="link" id = "Button10" href="" target="_blank">Loading Awesomeness . . .</a>
 
 <script>
 var sheetreq = new XMLHttpRequest();
@@ -31,7 +31,7 @@ sheetreq.onload  = function() {
    var jsonResponse = JSON.parse(sheetreq.responseText);
    // do something with jsonResponse
      var i;
-     for (i = 0; i < 20 ; i+=2)
+     for (i = 1; i < 20 ; i+=2)
           {
             document.getElementById("Button"+(i/2)).innerHTML = jsonResponse.feed.entry[i].content.$t;
             document.getElementById("Button"+(i/2)).href = jsonResponse.feed.entry[i+1].content.$t;
