@@ -1,0 +1,19 @@
+
+
+<div class="hidden" id="id1"><li><a href="upi://pay?pa=ddkhera@sbi&pn=There%20Is%20No%20Earth%20B&tn=Thank%20you%20for%20all%20your%20efforts&am=499&cu=INR&url=https://technlabs.com" class="fa fa-whatsapp"><span class="label">Upi</span></a></li>	</div>
+
+<div class="hidden" id="id2"><li><a href="intent://upi://pay?pa=ddkhera@sbi&pn=There%20Is%20No%20Earth%20B&am=1499&cu=INR&url=https://thereisnoearthb.org" class="fa fa-whatsapp"><span class="label">Not On device Go for online payment</span></a></li>	</div>
+<script>
+
+document.getElementById("id1").style.visibility = "hidden";
+document.getElementById("id2").style.visibility = "hidden";
+var ua = navigator.userAgent.toLowerCase();
+var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+if(isAndroid) {
+document.getElementById("id1").style.visibility = "visible";
+}
+else{
+  document.getElementById("id2").style.visibility = "visible";
+}
+
+</script>
