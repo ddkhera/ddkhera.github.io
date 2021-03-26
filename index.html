@@ -25,6 +25,27 @@
       <a class="link" id = "Button3" href="" target="_blank">.</a>
       <a class="link" id = "Button4" href="" target="_blank">.</a>
       <a class="link" id = "Button5" href="" target="_blank">.</a>
+      <div id="paypal-button-container-P-09K399637E545240NMBPDCUY"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AYdioozlEcii-ANzeeRMWvKnltJO7FteBoPa6j1sR4RxgWiqm7ibFTYlM5K4IaZiYkTOYAZBDQ4eboi7&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'black',
+          layout: 'vertical',
+          label: 'paypal'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-09K399637E545240NMBPDCUY'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-09K399637E545240NMBPDCUY'); // Renders the PayPal button
+</script>  
       <a class="link" id = "Button6" href="" target="_blank">.</a>
       <a class="link" id = "Button7" href="" target="_blank">.</a>
       <a class="link" id = "Button8" href="" target="_blank">.</a>
