@@ -22,13 +22,11 @@
       <div id="links">
       <a class="link" id = "Button1" href="" target="_blank">CITE KARO,<br>FIGHT NAHI</a>
       <a class="link" id = "Button2" href="" target="_blank">.</a>
-      <a class="link" id = "Button3" href="" target="_blank">.</a>
-      <a class="link" id = "Button4" href="" target="_blank">.</a>
-      <a class="link" id = "Button5" href="" target="_blank">.</a>
+
       <div id="paypal-button-container-P-09K399637E545240NMBPDCUY"></div>
-<script src="https://www.paypal.com/sdk/js?client-id=AYdioozlEcii-ANzeeRMWvKnltJO7FteBoPa6j1sR4RxgWiqm7ibFTYlM5K4IaZiYkTOYAZBDQ4eboi7&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
-<script>
-  paypal.Buttons({
+      <script src="https://www.paypal.com/sdk/js?client-id=AYdioozlEcii-ANzeeRMWvKnltJO7FteBoPa6j1sR4RxgWiqm7ibFTYlM5K4IaZiYkTOYAZBDQ4eboi7&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+      <script>
+      paypal.Buttons({
       style: {
           shape: 'rect',
           color: 'black',
@@ -44,14 +42,20 @@
       onApprove: function(data, actions) {
         alert(data.subscriptionID); // You can add optional success message for the subscriber here
       }
-  }).render('#paypal-button-container-P-09K399637E545240NMBPDCUY'); // Renders the PayPal button
-</script>  
+      }).render('#paypal-button-container-P-09K399637E545240NMBPDCUY'); // Renders the PayPal button
+      </script>
+
+      <!--
+      <a class="link" id = "Button3" href="" target="_blank">.</a>
+      <a class="link" id = "Button4" href="" target="_blank">.</a>
+      <a class="link" id = "Button5" href="" target="_blank">.</a>
+
       <a class="link" id = "Button6" href="" target="_blank">.</a>
       <a class="link" id = "Button7" href="" target="_blank">.</a>
       <a class="link" id = "Button8" href="" target="_blank">.</a>
       <a class="link" id = "Button9" href="" target="_blank">.</a>
       <a class="link" id = "Button10" href="" target="_blank">.</a>
-
+      -->
       <script>
           var sheetreq = new XMLHttpRequest();
           sheetreq.overrideMimeType("application/json");
