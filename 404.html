@@ -32,7 +32,7 @@
   //Get IGDPURL
   var req = new XMLHttpRequest();
   req.overrideMimeType("application/json");
-  req.open('GET', "https://cors-proxy.htmldriven.com/?url=https://www.instagram.com/"+InstaHandle+"/?__a=1", true);
+  req.open('GET', "http://www.whateverorigin.org/get?url=https://www.instagram.com/"+InstaHandle+"/?__a=1", true);
   req.onload  = function() {
      var jsonResponse = JSON.parse(req.responseText);
      // do something with jsonResponse
