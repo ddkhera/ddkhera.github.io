@@ -29,7 +29,7 @@ section {
     width: 700px;
 
 
-    #quote__text {
+    [id*="quote__text"]  {
       position: absolute;
       top: 250px;
       left: 40px;

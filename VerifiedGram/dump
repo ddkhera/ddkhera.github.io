@@ -1,0 +1,190 @@
+<div id="capture">
+    <h1 id="quote__text2">
+        Start typing </br> :)
+    </h1>
+    <img src="images/background.png">
+</div>
+<textarea></textarea>
+
+
+<button type="button" onClick="generate()">Generate</button>
+
+<a id="download" download="poster.png">
+    <button type="button" onClick="download()">Download</button>
+</a>
+
+<div id="render">
+    <h1>Render</h1>
+</div>
+
+<div id="capture">
+    <h1 id="quote__text3">
+        Start typing </br> :)
+    </h1>
+    <img src="images/background.png">
+</div>
+<textarea></textarea>
+
+
+<button type="button" onClick="generate()">Generate</button>
+
+<a id="download" download="poster.png">
+    <button type="button" onClick="download()">Download</button>
+</a>
+
+<div id="render">
+    <h1>Render</h1>
+</div>
+
+<div id="capture">
+    <h1 id="quote__text4">
+        Start typing </br> :)
+    </h1>
+    <img src="images/background.png">
+</div>
+<textarea></textarea>
+
+
+<button type="button" onClick="generate()">Generate</button>
+
+<a id="download" download="poster.png">
+    <button type="button" onClick="download()">Download</button>
+</a>
+
+<div id="render">
+    <h1>Render</h1>
+</div>
+
+<div id="capture">
+    <h1 id="quote__text5">
+        Start typing </br> :)
+    </h1>
+    <img src="images/background.png">
+</div>
+<textarea></textarea>
+
+
+<button type="button" onClick="generate()">Generate</button>
+
+<a id="download" download="poster.png">
+    <button type="button" onClick="download()">Download</button>
+</a>
+
+<div id="render">
+    <h1>Render</h1>
+</div>
+
+<div id="capture">
+    <h1 id="quote__text6">
+        Start typing </br> :)
+    </h1>
+    <img src="images/background.png">
+</div>
+<textarea></textarea>
+
+
+<button type="button" onClick="generate()">Generate</button>
+
+<a id="download" download="poster.png">
+    <button type="button" onClick="download()">Download</button>
+</a>
+
+<div id="render">
+    <h1>Render</h1>
+</div>
+
+<div id="capture">
+    <h1 id="quote__text7">
+        Start typing </br> :)
+    </h1>
+    <img src="images/background.png">
+</div>
+<textarea></textarea>
+
+
+<button type="button" onClick="generate()">Generate</button>
+
+<a id="download" download="poster.png">
+    <button type="button" onClick="download()">Download</button>
+</a>
+
+<div id="render">
+    <h1>Render</h1>
+</div>
+
+<div id="capture">
+    <h1 id="quote__text8">
+        Start typing </br> :)
+    </h1>
+    <img src="images/background.png">
+</div>
+<textarea></textarea>
+
+
+<button type="button" onClick="generate()">Generate</button>
+
+<a id="download" download="poster.png">
+    <button type="button" onClick="download()">Download</button>
+</a>
+
+<div id="render">
+    <h1>Render</h1>
+</div>
+
+<div id="capture">
+    <h1 id="quote__text9">
+        Start typing </br> :)
+    </h1>
+    <img src="images/background.png">
+</div>
+<textarea></textarea>
+
+
+<button type="button" onClick="generate()">Generate</button>
+
+<a id="download" download="poster.png">
+    <button type="button" onClick="download()">Download</button>
+</a>
+
+<div id="render">
+    <h1>Render</h1>
+</div>
+
+<div id="capture">
+    <h1 id="quote__text10">
+        Start typing </br> :)
+    </h1>
+    <img src="images/background.png">
+</div>
+<textarea></textarea>
+
+
+<button type="button" onClick="generate()">Generate</button>
+
+<a id="download" download="poster.png">
+    <button type="button" onClick="download()">Download</button>
+</a>
+
+<div id="render">
+    <h1>Render</h1>
+</div>
+
+
+<div id="capture">
+    <h1 id="quote__text11">
+        Start typing </br> :)
+    </h1>
+    <img src="images/background.png">
+</div>
+<textarea></textarea>
+
+
+<button type="button" onClick="generate()">Generate</button>
+
+<a id="download" download="poster.png">
+    <button type="button" onClick="download()">Download</button>
+</a>
+
+<div id="render">
+    <h1>Render</h1>
+</div>
