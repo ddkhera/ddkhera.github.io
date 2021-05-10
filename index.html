@@ -25,7 +25,7 @@
       <a class="link" id = "Button1" href="" target="_blank">:)</a>
       <a class="link" id = "Button2" href="" target="_blank">...</a>
       <a class="link" id = "Button3" href="" target="_blank">.</a>
-      <a class="link" id = "Button4" href="" target="_blank">.</a>
+      <a class="link" id = "ButtonPay" href="" target="_blank">Buy Me a Pizza</a>
       <a class="link" href="themes/index.html" target="_blank">Pick a theme<br>Get your own blazing fast, low-carbon footprint page without any recurring costs or external branding</a>
 
       <div id="paypal-button-container-P-09K399637E545240NMBPDCUY"></div>
@@ -78,5 +78,31 @@
           };
           sheetreq.send(null);
       </script>
+
+      <script>
+
+
+              function gfg_Run() {
+                var sites = [
+
+            'upi://pay?pa=ddkhera@sbi&pn=Dhrstadyumn Khera&tn=Contact me:dhrstadyumn@gmail.com&cu=INR','gpay://upi/pay?pa=ddkhera@sbi&pn=Dhrstadyumn Khera&tn=Contact me:dhrstadyumn@gmail.com&cu=INR'
+
+            ];
+                var iOS =
+                  /iPad|iPhone|iPod/.test(navigator.userAgent) &&
+                  !window.MSStream;
+
+                  if (iOS) {
+                    document.getElementById("ButtonPay").href =  sites[1];
+                                  } else {
+                    document.getElementById("ButtonPay").href =  sites[0];
+                                  }
+              }
+
+
+      </script>
+
+      <body onload="gfg_Run();">
+
 </body>
 </html>
