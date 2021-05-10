@@ -1,0 +1,28 @@
+<script>
+    var sites = [
+
+'upi://pay?pa=ddkhera@sbi&pn=Dhrstadyumn Khera&tn=Contact me:dhrstadyumn@gmail.com&cu=INR','gpay://upi/pay?pa=ddkhera@sbi&pn=Dhrstadyumn Khera&tn=Contact me:dhrstadyumn@gmail.com&cu=INR'
+
+];
+
+    function randomSite() {
+        var i = parseInt(Math.random() * sites.length);
+        location.href = sites[i];
+
+
+
+    		function gfg_Run() {
+    			var iOS =
+    				/iPad|iPhone|iPod/.test(navigator.userAgent) &&
+    				!window.MSStream;
+
+            if (iOS) {
+                              location.href = sites[1];;
+                            } else {
+                              location.href = sites[0];
+                            }
+    		}
+
+    }
+</script>
+<body onload='randomSite()'>
