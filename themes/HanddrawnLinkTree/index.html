@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <meta name="title" content="Live Updating verified covid tap to call resources (PAN INDIA) ">
+    <meta name="description" content="This is a compilation of all peer verified covid phone numbers that have helped people (PAN INDIA)">
+    <meta name="keywords" content="Distributer, Indian, covid,  delhi, helpline,phone number, corona, UP, delhi, Uttarpradesh,Remdesivir, call, injection, cipla, oxygen, help, ramdesivir, updated, latest, hospital">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+
+
+    <meta property="og:title" content="Live Updating verified covid tap to call resources (PAN INDIA)" />
+    <meta property="og:description" content="This is a compilation of all peer verified covid phone numbers that have helped people (PAN INDIA)" />
+   <meta property="og:image"  content="http://thereisnoearthb.com/WebsiteImage.jpg" />
+   <meta property="og:image:secure_url"  content="https://thereisnoearthb.com/WebsiteImage.jpg"/>
+   <meta property="og:image:type" content="image/jpeg" />
+   <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="TINEB_LOGO.jpeg" type="image/x-icon"/>
+
+
+</head>
+<body>
+
+  <h1>Harry Potter and the Verified Leads</h1>
+  <section>
+    <a id = "Button1Link" href="tel:112"><button id = "Button1Text" class='lined thick'>The way to the chamber of secrets will appear here</button></a>
+  </section>
+  <section>
+
+    <a id = "WhatsAppButton1" href="https://t.me/thereisneoarthb"><button class='dashed thick'><img src="icons/whatsapp.svg" alt="WhatsApp icon"height="50"></button></a>
+    <a id = "TweetButton1" href="https://twitter.com/thereisnoearthb"><button class='dashed thick'><img src="icons/twitter.svg" alt="Twitter icon"height="50"></button></a>
+    <a id = "GramButton1" href="https://instagram.com/thereisnoearthb"><button class='dashed thick'><img src="icons/instagram.svg" alt="Instagram icon" height="50"></button></a>
+
+  </section>
+
+    <script>
+        var sheetreq = new XMLHttpRequest();
+        sheetreq.overrideMimeType("application/json");
+        sheetreq.open('GET', "https://spreadsheets.google.com/feeds/cells/1s_b8BT6a36gJs5LcJNSuUEFMpa4fQJY0nyYOQytu0A4/2/public/full?alt=json", true);
+        sheetreq.onload  = function() {
+           var jsonResponse = JSON.parse(sheetreq.responseText);
+           // do something with jsonResponse
+           var i;
+           for (i = 0,j=1; i < 12400000 ; i+=5  ,j+=1)
+                {
+                  document.getElementById("Button"+(j)+"Text").innerHTML = (jsonResponse.feed.entry[i+3].content.$t+"<br>"+jsonResponse.feed.entry[i+2].content.$t+"<br>Tap to call:"+jsonResponse.feed.entry[i+1].content.$t+"<br>"+"Verified by:@"+jsonResponse.feed.entry[i+4].content.$t+"<br>"+jsonResponse.feed.entry[i].content.$t);
+                  document.getElementById("Button"+(j)+"Link").href = "tel:"+jsonResponse.feed.entry[i+1].content.$t;
+                  document.getElementById("GramButton"+(j)).href = "https://thereisnoearthb.com/VerifiedGram/index.html?"+(i);
+                }
+
+        };
+        sheetreq.send(null);
+    </script>
+
+    <script>
+            var sheetreq2 = new XMLHttpRequest();
+            sheetreq2.overrideMimeType("application/json");
+            sheetreq2.open('GET', "https://spreadsheets.google.com/feeds/cells/1s_b8BT6a36gJs5LcJNSuUEFMpa4fQJY0nyYOQytu0A4/3/public/full?alt=json", true);
+            sheetreq2.onload  = function() {
+               var jsonResponse = JSON.parse(sheetreq2.responseText);
+               // do something with jsonResponse
+               var i;
+               for (i = 0,j=1; i < 12400000 ; i+=7 ,j+=1)
+                    {
+                      document.getElementById("WhatsAppButton"+(j)).href = jsonResponse.feed.entry[i].content.$t;
+                      document.getElementById("TweetButton"+(j)).href = jsonResponse.feed.entry[i+3].content.$t;
+                    }
+
+            };
+            sheetreq2.send(null);
+        </script>
+
+
+</body>
