@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta charset="UTF-8">
+   <meta property="og:title" content="WhatsApp Engagement" />
+   <!--<meta property="og:description" content="" />-->
+   <meta property="og:image"  content="https://jhatkaapages.github.io/profile.png" />
+       <!--<meta property="og:image:secure_url"  content="https:// "/>-->
+       <meta property="og:image:type" content="image/png" />
+       <meta name="twitter:card" content="summary_large_image" />
+
+	<title>WhatsApp Engagement</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="profile.png" type="image/x-icon"/>
+</head>
+
+<body>
+  <img id="userPhoto" src="profile.png" alt="User Photo">
+
+  <a href="https://wa.me/919868113891" id="userName">WhatsApp Engagement</a>
+
+      <div id="links">
+
+      <center><textarea rows="4" cols="32" id="MessageToSend">Could you please give a quick shoutout to 'There Is No Earth B'? instagram.com/thereisnoearthb twitter.com/thereisnoearthb t.me/thereisnoearthb</textarea>
+      <br>
+      <!--<button onClick="generate()">Generate</button>-->
+      </center>
+
+      <a class="link" id = "Generate"  onClick="generate()" target="_blank">Generate messages</a>
+      <br>
+      <a class="link" id = "Button1" href="" target="_blank">Dhrstadyumn</a>
+      <a class="link" id = "Button2" href="" target="_blank">DD</a>
+
+
+</div>
+
+<script>
+
+
+function generate() {
+  var sites = [
+      'https://wa.me/919868113891/?text=Hi%20Dhrstadyumn%0AHope%20you%27re%20doing%20well.%20I%27m%20finalizing%20the%20contents%20for%20your%20care%20package.%20Please%20share%20a%20google%20photos%20link%20to%20a%20high%20quality%20picture%20of%20yourself%20that%20you%20love%20or%20give%20me%20consent%20to%20pick%20one%20from%20your%20social%20media.%20We%27ll%20be%20printing%20it%20and%20sending%20it%20to%20you.%20The%20person%20curating%20the%20package%20is%20a%20woman%20and%20your%20information%20shall%20remain%20confidential',
+      'https://wa.me/919868113891/?text=Hi%20DD%0AHope%20you%27re%20doing%20well.%20I%27m%20finalizing%20the%20contents%20for%20your%20care%20package.%20Please%20share%20a%20google%20photos%20link%20to%20a%20high%20quality%20picture%20of%20yourself%20that%20you%20love%20or%20give%20me%20consent%20to%20pick%20one%20from%20your%20social%20media.%20We%27ll%20be%20printing%20it%20and%20sending%20it%20to%20you.%20The%20person%20curating%20the%20package%20is%20a%20woman%20and%20your%20information%20shall%20remain%20confidential'
+    ];
+
+    var ContactNumber = [
+        '9868113891',
+        '9868113891'
+      ];
+      //MessageToSend = "Could you please give a quick shoutout to 'There Is No Earth B'?<br>instagram.com/thereisnoearthb<br>twitter.com/thereisnoearthb<br>t.me/thereisnoearthb";
+
+
+var ContactName  = [
+    'Dhrstadyumn',
+    'DD'
+  ];
+  var i;
+  for (i = 1; i < 3 ; i+=1)
+       {
+         //document.getElementById("Button"+(i)).href = sites[i-1];
+         //=concatenate("https://wa.me/91",C2,"/?text=",ENCODEURL(I2))
+         const CompleteMessageToSend = "Hi "+ContactName[i-1]+"\n"+ document.getElementById("MessageToSend").value;
+        //const val = quote__textbox.value;
+         //console.log(encodeURIComponent(val));
+
+         //document.getElementById("Button"+(i)).href = "https://wa.me/91"+ContactNumber[i-1]+"/?text="+encodeURIComponent(CompleteMessageToSend);
+         document.getElementById("Button"+(i)).href = "https://wa.me/91"+ContactNumber[i-1]+"/?text="+(encodeURIComponent(CompleteMessageToSend));
+
+       }
+
+}
+</script>
+
+</body>
+<!--<body onload="generate();">-->
+
+</html>
